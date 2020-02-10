@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit; }
+
+/*--------------------*/
+@font-face {
+  font-family: 'Lato-Black';
+  src: url("../../fonts/Lato-Black.ttf"); }
+
+@font-face {
+  font-family: 'Lato-BlackItalic';
+  src: url("../../fonts/Lato-BlackItalic.ttf"); }
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url("../../fonts/Lato-Bold.ttf"); }
+
+@font-face {
+  font-family: 'Lato-BoldItalic';
+  src: url("../../fonts/Lato-BoldItalic.ttf"); }
+
+@font-face {
+  font-family: 'Lato-Light';
+  src: url("../../fonts/Lato-Light.ttf"); }
+
+@font-face {
+  font-family: 'Lato-LightItalic';
+  src: url("../../fonts/Lato-LightItalic.ttf"); }
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("../../fonts/Lato-Regular.ttf"); }
+
+@font-face {
+  font-family: 'Lato-Thin';
+  src: url("../../fonts/Lato-Thin.ttf"); }
+
+@font-face {
+  font-family: 'Lato-ThinItalic';
+  src: url("../../fonts/Lato-ThinItalic.ttf"); }
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("../../fonts/OpenSans-Bold.ttf"); }
+
+@font-face {
+  font-family: 'OpenSans-BoldItalic';
+  src: url("../../fonts/OpenSans-BoldItalic.ttf"); }
+
+@font-face {
+  font-family: 'OpenSans-ExtraBold';
+  src: url("../../fonts/OpenSans-ExtraBold.ttf"); }
+
+@font-face {
+  font-family: 'OpenSans-ExtraBoldItalic';
+  src: url("../../fonts/OpenSans-ExtraBoldItalic.ttf"); }
+
+@font-face {
+  font-family: 'OpenSans-Italic';
+  src: url("../../fonts/OpenSans-Italic.ttf"); }
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url("../../fonts/OpenSans-Light.ttf"); }
+
+@font-face {
+  font-family: 'OpenSans-LightItalic';
+  src: url("../../fonts/OpenSans-LightItalic.ttf"); }
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("../../fonts/OpenSans-Regular.ttf"); }
+
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url("../../fonts/OpenSans-SemiBold.ttf"); }
+
+@font-face {
+  font-family: 'OpenSans-SemiBoldItalic';
+  src: url("../../fonts/OpenSans-SemiBoldItalic.ttf"); }
+
+body {
+  font-family: 'Open Sans';
+  color: #ffffff; }
+
+.header {
+  background: url(../../img/header-background.png) rgba(0, 0, 0, 0.61) no-repeat fixed;
+  background-size: cover; }
+  .header input {
+    font-size: 14px;
+    font-family: 'Lato-ThinItalic';
+    background-color: transparent;
+    color: #fff;
+    letter-spacing: 0.94px;
+    font-weight: 600; }
+
+.container-nav-bar {
+  background-color: rgba(16, 22, 54, 0.2);
+  /*
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+   */ }
+
+.nav-bar {
+  padding: 23px 0 10px; }
+
+.menu__item {
+  margin-left: 23px;
+  font-weight: 600; }
+  .menu__item:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); }
+  .menu__item a {
+    font-size: 12px;
+    font-family: "Lato-Thin";
+    color: #fff; }
+
+#logo {
+  font-size: 21px;
+  font-family: 'Lato-Black';
+  letter-spacing: 1.4px; }
+
+.header__span_dot {
+  color: #4c76ff;
+  font-size: 21px; }
+
+.header__title {
+  margin-top: 242px;
+  margin-bottom: 0;
+  font-size: 62px;
+  font-family: "Lato-Black"; }
+  .header__title .header__span_dot {
+    font-size: 62px; }
+
+.header__text_big {
+  font-size: 48px;
+  font-family: 'Lato-Thin'; }
+
+.header__text_small {
+  font-size: 18px;
+  font-family: Lato-Thin; }
+  .header__text_small:before, .header__text_small:after {
+    content: "";
+    display: inline-block;
+    border-top: 1px solid #4c76ff;
+    width: 28px;
+    margin: 0 39px;
+    transform: translateY(-4px); }
+
+.header__span_thin {
+  color: #4c76ff; }
+
+.icons {
+  margin: 110px auto 122px;
+  font-size: 18px; }
+  .icons a {
+    color: #ffffff;
+    opacity: .3; }
+    .icons a:hover {
+      opacity: 1; }
+    .icons a i {
+      margin-right: 16px; }
+
+/*# sourceMappingURL=style.css.map */
