@@ -308,3 +308,96 @@ div[val]{
     }
   }
 }
+
+//Team
+.team-person{
+  margin-top:100px;
+  margin-bottom: 108px;
+  img{
+    filter: grayscale(1);
+  }
+  &:hover {
+    //TO CHANGE
+    .overlay {
+      bottom: 0;
+      height: 100%;
+    }
+    .team-person__heading{
+
+    }
+  }
+}
+.team-person__heading{
+  color: #062033;
+  font-family: "Open Sans - Semibold";
+  font-size: 15px;
+  line-height: 19.91px;
+  margin-bottom: 0;
+}
+.team-person__paragraph{
+  opacity: 0.56;
+  color: #062033;
+  font-family: "Open Sans";
+  font-size: 11px;
+  line-height: 19.91px;
+}
+
+//Facts
+.facts{
+  background: url(../../img/facts_bg_vector.png)  no-repeat fixed , url(../../img/facts_back.png)  no-repeat fixed;
+  background-size: cover;
+
+  .section__title{
+    padding-top: 75px;
+  }
+  .section__text{
+    color: #fff;
+    opacity: 1;
+    margin-bottom: 22px;
+    &:before, &:after {
+      content: "";
+      display: inline-block;
+      border-top: 1px solid #fff;
+      width: 68px;
+      margin: 0 39px;
+      transform: translateY(-4px);
+    }
+  }
+  .circle{
+    width: 98px;
+    height: 98px;
+    border: 2px solid #666666;
+    i{
+      font-size: 25px;
+      color: #fff;
+      opacity: 1;
+    }
+  }
+  .text{
+    margin-top: 38px;
+    .section__paragraph_header{
+      color: #ffffff;
+      font-family: "Open Sans Semibold";
+      font-size: 45px;
+      margin-bottom: 14px;
+    }
+    .section__paragraph_text{
+      font-family: "Open Sans";
+      font-size: 13px;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 118px;
+    }
+  }
+}
+
+//Discuss
+.discuss{
+  .section__text_paragraph{
+    font-size: 18px;
+    line-height: 24px;
+    opacity: 0.8;
+    margin-top: 60px;
+    margin-bottom: 77px;
+  }
+}
