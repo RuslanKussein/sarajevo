@@ -19,6 +19,7 @@ body{
     font-weight: 600;
   }
 }
+
 .container-nav-bar{
   background-color: rgba(16, 22, 54, 0.2);
   /*
@@ -27,9 +28,11 @@ body{
   top: 0;
    */
 }
+
 .nav-bar{
   padding:23px 0 10px;
 }
+
 .menu__item{
   margin-left:23px;
   font-weight: 600;
@@ -43,15 +46,18 @@ body{
     color:#fff;
   }
 }
+
 #logo{
   font-size: 21px;
   font-family: 'Lato-Black';
   letter-spacing: 1.4px;
 }
+
 .header__span_dot{
   color:#4c76ff;
   font-size: 21px;
 }
+
 .header__title{
   margin-top:242px;
   margin-bottom: 0;
@@ -61,10 +67,12 @@ body{
     font-size: 62px;
   }
 }
+
 .header__text_big{
   font-size: 48px;
   font-family: 'Lato-Thin';
 }
+
 .header__text_small{
   font-size: 18px;
   font-family: Lato-Thin;
@@ -77,9 +85,11 @@ body{
     transform: translateY(-4px);
   }
 }
+
 .header__span_thin{
   color:#4c76ff;
 }
+
 .icons{
   margin: 110px auto 122px;
   font-size:18px;
@@ -93,4 +103,71 @@ body{
       margin-right:16px;
     }
   }
+}
+
+//Features
+.features{
+  background-color: #DDDDDD;
+  color:black;
+  text-align: center;
+}
+
+.section__title{
+  padding-top:78px;
+  font-family: 'Lato-Black';
+  font-size: 28px;
+  color:#4c76ff;
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+}
+.section__text{
+  color:#062033;
+  opacity:0.2;
+  font-size:18px;
+  margin-top:25px;
+  &:before, &:after {
+    content: "";
+    display: inline-block;
+    border-top: 1px solid #062033;
+    width: 90px;
+    margin: 0 17px;
+    transform: translateY(-4px);
+  }
+}
+
+.circle{
+  width: 90px;
+  height: 34px;
+  border: 1px solid #4c76ff;;
+  background-color: transparent;
+  border-radius: 50%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-right:14px;
+  i{
+    font-size: 15px;
+    color: #4c76ff;
+  }
+}
+
+.section__paragraph_header{
+  font-family: "Open Sans - Semibold";
+  font-size: 17px;
+  color: #062033;
+}
+.section__paragraph_text{
+  font-family: "Open Sans";
+  font-size: 11px;
+  line-height: 17.62px;
+  opacity: 0.7;
+  color: #062033;
+}
+.card-features{
+  background-color: transparent;
+  text-align: left;
+  margin-top:87px;
+}
+.cards-features{
+  padding-bottom: 118px;
 }

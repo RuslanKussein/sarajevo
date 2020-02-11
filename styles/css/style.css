@@ -218,4 +218,64 @@ body {
     .icons a i {
       margin-right: 16px; }
 
+.features {
+  background-color: #DDDDDD;
+  color: black;
+  text-align: center; }
+
+.section__title {
+  padding-top: 78px;
+  font-family: 'Lato-Black';
+  font-size: 28px;
+  color: #4c76ff;
+  letter-spacing: -0.56px;
+  text-transform: uppercase; }
+
+.section__text {
+  color: #062033;
+  opacity: 0.2;
+  font-size: 18px;
+  margin-top: 25px; }
+  .section__text:before, .section__text:after {
+    content: "";
+    display: inline-block;
+    border-top: 1px solid #062033;
+    width: 90px;
+    margin: 0 17px;
+    transform: translateY(-4px); }
+
+.circle {
+  width: 90px;
+  height: 34px;
+  border: 1px solid #4c76ff;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px; }
+  .circle i {
+    font-size: 15px;
+    color: #4c76ff; }
+
+.section__paragraph_header {
+  font-family: "Open Sans - Semibold";
+  font-size: 17px;
+  color: #062033; }
+
+.section__paragraph_text {
+  font-family: "Open Sans";
+  font-size: 11px;
+  line-height: 17.62px;
+  opacity: 0.7;
+  color: #062033; }
+
+.card-features {
+  background-color: transparent;
+  text-align: left;
+  margin-top: 87px; }
+
+.cards-features {
+  padding-bottom: 118px; }
+
 /*# sourceMappingURL=style.css.map */
