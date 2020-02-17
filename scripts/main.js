@@ -1,17 +1,4 @@
 $(document).ready(function (){
-    //Fixed Scroll Down Bug issues
-    /*
-    window.onscroll = function() {myFunction()};
-    var header = document.getElementById("header-nav");
-    var sticky = header.offsetTop;
-    function myFunction() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
-        }
-    }
-    */
 
     //Navbar scroll
     $('ul.menu a[href^="#"]').click(function () {
@@ -38,22 +25,21 @@ $(document).ready(function (){
             });
         }
     });
-    //Portfolio
-    $('button.button[val]').click(function () {
-        if ($(this).attr('val') != 'all' && $(this).attr('bool') == 'off') {
-            $('button.button[bool]').attr('bool', 'off');
-            $(this).attr('bool', 'on');
-            $('button.button[val]').removeClass('focused');
-            $(this).addClass('focused');
-            //Suda mozhno dobavit(tipa novie image i zapushit)
-            var nameOfValue=$(this).attr('val');
-            $('button.button[val='+nameOfValue+']').show(300);
-        } else if ($(this).attr('val') == 'all' && $(this).attr('bool') == 'off') {
-            $('button[bool]').attr('bool', 'off');
-            $(this).attr('bool', 'on');
-            $('button[bool]').removeClass('focused');
-            $(this).addClass('focused');
-            $('button.button[val]').show(300);
+    //drop down menu
+    $('.menu-icon').click(function () {
+        $('nav').slideToggle(500);
+        $('ul.menu').css({
+            'display': 'flex',
+            'flex-direction': 'column'
+        });
+        $('ul.menu>li.menu__item').css({
+           'margin':'4px 0',
+            'z-index':'5',
+        });
+        if ($('.menu-icon').html() == '<i class="fas fa-caret-down"></i>') {
+            $(this).html('<i class="fas fa-caret-up"></i>');
+        } else {
+            $(this).html('<i class="fas fa-caret-down"></i>');
         }
     });
 });
