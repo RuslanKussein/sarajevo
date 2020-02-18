@@ -531,7 +531,9 @@ div[val]{
 }
 
 //Media
-@media screen and (min-width: 769px) {
+
+
+@media screen and (min-width: 768px) {
   nav{
     display:block!important;
   }
@@ -540,9 +542,24 @@ div[val]{
   }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
   nav{
     display:none;
+  }
+
+  .header input{
+    margin:10px 0;
+    width:50%;
+    height: 25px;
+    &:focus{
+      outline:none;
+      border:1px solid rgba(76,118,255,0.6);
+    }
+  }
+  .menu__item a{
+      font-size:16px;
+      font-family: 'Lato-Light';
+      letter-spacing: 3px;
   }
 
   .menu-icon{
@@ -591,5 +608,13 @@ div[val]{
   .about .after-section-text{
     padding: 20px 0 50px;
   }
-
+  .about .iphone{
+    img{
+      &:nth-child(2){
+        right: 21px;
+        top: 42px;
+        width:136px;
+      }
+    }
+  }
 }

@@ -30,11 +30,10 @@ $(document).ready(function (){
         $('nav').slideToggle(500);
         $('ul.menu').css({
             'display': 'flex',
-            'flex-direction': 'column'
+            'flex-direction': 'column',
         });
         $('ul.menu>li.menu__item').css({
            'margin':'4px 0',
-            'z-index':'5',
         });
         if ($('.menu-icon').html() == '<i class="fas fa-caret-down"></i>') {
             $(this).html('<i class="fas fa-caret-up"></i>');
