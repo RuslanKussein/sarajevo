@@ -37,8 +37,13 @@ $(document).ready(function (){
         });
         if ($('.menu-icon').html() == '<i class="fas fa-caret-down"></i>') {
             $(this).html('<i class="fas fa-caret-up"></i>');
+            $('body').addClass('stop-scrolling');
+            $('body').bind('touchmove', function(e){e.preventDefault()})
         } else {
             $(this).html('<i class="fas fa-caret-down"></i>');
+            $('body').removeClass('stop-scrolling');
+            $('body').unbind('touchmove')
         }
+
     });
 });

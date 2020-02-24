@@ -6,6 +6,11 @@ body{
   color:#ffffff;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 //Header
 .header {
   background: url(../../img/header-background.png) rgba(0, 0, 0, 0.61) no-repeat fixed;
@@ -531,7 +536,33 @@ div[val]{
 }
 
 //Media
+@media screen and (min-width:960px){
+  .about {
+    .iphone {
+      position: relative;
 
+      img {
+        &:nth-child(2) {
+          position: absolute;
+          right: 41px;
+        }
+      }
+    }
+    .after-section-text{
+      padding-bottom:70px;
+    }
+  }
+  .card-features{
+    margin-top: 40px;
+  }
+  .circle{
+    width:70px;
+    height:55px;
+    i{
+      font-size:17px;
+    }
+  }
+}
 
 @media screen and (min-width: 768px) {
   nav{
@@ -541,7 +572,11 @@ div[val]{
     flex-direction: row!important;
   }
 }
-
+@media screen and (max-width:992px){
+  .team-person{
+    margin: 30px 0;
+  }
+}
 @media screen and (max-width:767px){
   nav{
     display:none;
