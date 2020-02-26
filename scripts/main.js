@@ -44,6 +44,11 @@ $(document).ready(function (){
             $('body').removeClass('stop-scrolling');
             $('body').unbind('touchmove')
         }
+    });
 
+    //Works focused
+    $('.works .button').click(function () {
+        $('.works .button').removeClass('focused');
+        $(this).addClass('focused');
     });
 });

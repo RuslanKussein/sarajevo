@@ -537,30 +537,8 @@ div[val]{
 
 //Media
 @media screen and (min-width:960px){
-  .about {
-    .iphone {
-      position: relative;
-
-      img {
-        &:nth-child(2) {
-          position: absolute;
-          right: 41px;
-        }
-      }
-    }
-    .after-section-text{
-      padding-bottom:70px;
-    }
-  }
   .card-features{
     margin-top: 40px;
-  }
-  .circle{
-    width:70px;
-    height:55px;
-    i{
-      font-size:17px;
-    }
   }
 }
 
@@ -575,6 +553,30 @@ div[val]{
 @media screen and (max-width:992px){
   .team-person{
     margin: 30px 0;
+  }
+
+  .circle{
+    width:85px;
+    height:55px;
+    i{
+      font-size:17px;
+    }
+  }
+
+  .about {
+    .iphone {
+      position: relative;
+
+      img {
+        &:nth-child(2) {
+          position: absolute;
+          right: 41px;
+        }
+      }
+    }
+    .after-section-text{
+      padding-bottom:70px;
+    }
   }
 }
 @media screen and (max-width:767px){
@@ -618,10 +620,6 @@ div[val]{
     &:hover{
       transform: none;
     }
-  }
-
-  .circle{
-    width:60px;
   }
 
   .section__title{
